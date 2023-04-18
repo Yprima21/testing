@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../tes/gambar/logo.png">
+        <link rel="stylesheet" href="messege.css">
+        <title>Mini Project</title>
+    </head>
+<body>
+        <!-- Navbar -->
+        <header class="header">
+            <nav class="navbar">
+                <img src="../tes/gambar/logo.png" class="logo" alt=""> 
+                <a href="index.html" class="menu">Home</a>
+                <a href="profile.html" class="menu">Profile</a>
+                <a href="achievement.html" class="menu">Achievement</a>
+                <a href="messege.html" class="menu">Messege Us</a>       
+            </nav>
+        </header>
+        <!-- Navbar End -->
+
+            <!--Messege-->
+    <main>
+        <section id="messege-us">
+        <div class="container">
+            <h1>Messege Us</h1>
+            <div class="row row-top">
+              <div class="column">
+                <div class="messege-form">
+                    <form id="msg-form" name="msg-form" onsubmit="return validateForm()">
+                        <div class="row">
+                            <div class="column-l">
+                                <label class="label-l" for="nama">Nama</label><br>
+                                <label class="label-l" for="tanggal">Tanggal lahir</label><br>
+                                <label class="label-l" for="kelamin">Jenis kelamin</label><br>
+                                <label class="label-l" for="pesan">Pesan</label><br>
+                            </div>
+                            <div class="column-mid">
+                                <b>: </b><br>
+                                <b>: </b><br>
+                                <b>: </b><br>
+                                <b>: </b>
+                            </div>
+                            <div class="column-r">
+                                <input class="label-r" type="text" id="nama" name="nama" placeholder="Nama" required=""><br>
+                                <input class="label-rd" type="date" id="tanggal" placeholder="dd-mm-yyyy" name="tanggal" required=""><br>
+                                <input class="radio-k" type="radio" id="laki" name="kelamin" value="laki" required="">
+                                <label for="laki">Laki-Laki</label>
+                                <input class="radio-k" type="radio" id="perempuan" name="kelamin" value="perempuan" required="">
+                                <label for="perempuan">Perempuan</label><br>
+                                <input class="label-p" type="text" id="pesan" name="pesan" placeholder="Pesan" required=""><br>
+                            </div>
+                        </div>
+                        <input class="btn-submit" type="submit" value="Submit">
+                    </form>
+                </div>
+              </div>
+              <div class="column">
+                <div class="message-show">
+                    <p>
+                        <b>Current time :</b> <span id="sender-time"></span>
+                        <br>
+                        <br>
+                        <b>Nama :</b> <span id="sender-nama"></span>
+                        <br>
+                        <b>Tanggal Lahir :</b> <span id="sender-tanggal"></span>
+                        <br>
+                        <b>Jenis Kelamin :</b> <span id="sender-kelamin"></span>
+                        <br>
+                        <b>Pesan :</b> <span id="sender-pesan"></span>
+                    </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <hr>
+        </section>
+    </main>
+    <!--Messege End-->
+    
+    <!--Footer-->
+    <footer>
+        <p>Created By Prima</p>
+        <hr>
+    </footer>
+    <!--Footer End-->
+</body>
+</html>
